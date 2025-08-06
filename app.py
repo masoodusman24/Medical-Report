@@ -6,7 +6,7 @@ import openai
 import os
 
 # Load your OpenAI API key
-openai.api_key = "your-openai-api-key"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("🧾 Medical Report Assistant with Generative AI")
 
